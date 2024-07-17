@@ -630,6 +630,9 @@ color: #1d2023;
 .client{
     background-color:#eeeeee;
 }
+.client .owl-carousel.owl-loaded.owl-drag{
+    overflow: hidden;
+}
 .clients__items{
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -866,18 +869,20 @@ color: #1d2023;
 .triangle {
     position: absolute;
     right: 0;
-    width: 50%;
-    max-width: 800px;
-    max-height: 800px;
-    height: 100%;
-    width: 100%;
-    background: url('../Images/family-picnic.jpg') center center;
+    top: -16%;
+    height: 127%;
+    width: 150%;
+    background: url(../Images/family-picnic.jpg) center center;
     background-size: cover;
     transition: 0.4s cubic-bezier(1, -1, 0, 2);
     clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+    left: -20%;
   }
  
-  
+  .partneship__data,.ceo__thoughts .ceo__expression,.airnub__content p,.whatnew__tweetcontent p,.whatnew__facebookinfo p,.partner__para{
+    font-size: 18px;
+    line-height: 30px;
+}
   
 
 /* NEW APPROCH CSS END*/
@@ -886,5 +891,160 @@ color: #1d2023;
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1400px;
+    }
+}
+@media (max-width: 1440px) {
+    .client .owl-nav .owl-prev {
+        left: -20px;
+    }
+    .client .owl-nav .owl-next{
+        right: -20px;
+    }   
+    .header__nav{
+        gap:15px;
+    }
+    .header__videocontent h1{
+        font-size: 26px;
+    }
+    .approch .whatnew__titlesection h2{
+        font-size: 24px;
+        width: 81%;
+    }
+}
+@media (max-width: 1366px) {
+    .client .owl-nav .owl-prev {
+        left: -25px;
+    }
+    .client .owl-nav .owl-next{
+        right: -25px;
+    }   
+    .partneship__data,.ceo__thoughts .ceo__expression,.airnub__content p,.whatnew__tweetcontent p,.whatnew__facebookinfo p,.partner__para{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 1200px) {
+    .header__top ul li a{
+        font-size: 12px;
+    } 
+    .header__banner nav li a,.footer__links li a{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width:992px){
+    .navbar-toggler{
+        padding: 0;
+        border: 0;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .primary-btn-partner{
+        width: 40%;
+    }
+    .header__top{
+        padding: 10px 0;
+    }
+    .navbar-brand img{
+        height: 40px;
+    }
+    .navbar .container{
+        align-items: flex-start;
+    }
+    .wrapper-menu{
+       
+    position: absolute;
+    right: 0;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+   
+    }
+    .header__nav{
+        border-radius: 10px;
+        background-color: #0b1820;
+        padding: 15px;  
+    }
+    /* .navbar-toggler svg{
+        position: relative;
+        left: -100px;
+    } */
+    .partnership__card h5 {
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    
+    .partnership__card h5 {
+        font-size: 18px;
+        position: static;
+        margin-top: 15px;
+    }
+    
+    .header__videocontent{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header__videocontent h1{
+        width: 100%;
+    }
+    .btn-videoplay {
+        align-self: end;
+    }
+    .triangle{
+        height: 500px;
+        width: 100%;
+        position: static;
+        
+    }
+    .partnership__titlesection{
+        padding-bottom: 0;
+    }
+    .partnesrhip__cardwrapper{
+        flex-wrap: wrap;
+    }
+    .partnership__card{
+        width: 100%;
+    }
+    .airnub__videosection{
+        position: static;
+        height: 500px;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+    .section-padding.airnub.position-relative .col-md-6{
+        margin-top: 15px;
+    }
+    .whatnew__wrapperitem{
+        width: 100%;
+    }
+    .footer__links{
+        flex-direction: column;
+    }
+    .client .owl-nav .owl-prev, .owl-nav .owl-next{
+        right: 0;
+        left: 0;
+        position: absolute;
+        top: unset;
+    }
+    .owl-nav{
+        margin-top: 5%;
+    }
+    .icon-arrow-right2{
+        margin-left: 20px;
+    }
+    .clients__items {
+        grid-template-rows: repeat(2, 100px);
+        gap: 5px;
+    }
+    .ceo__thoughts .ceo__expression{
+        width: 100%;
     }
 }
