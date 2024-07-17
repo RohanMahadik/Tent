@@ -630,9 +630,7 @@ color: #1d2023;
 .client{
     background-color:#eeeeee;
 }
-.client .owl-carousel.owl-loaded.owl-drag{
-    overflow: hidden;
-}
+
 .clients__items{
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -976,7 +974,9 @@ color: #1d2023;
     .partnership__card h5 {
         font-size: 16px;
     }
-    
+    .client .owl-carousel.owl-loaded.owl-drag{
+        overflow: hidden;
+    }
 }
 
 

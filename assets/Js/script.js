@@ -3,6 +3,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
+    autoplay: true,
     navText: ['<span class="icon-arrow-left2"></span>', '<span class="icon-arrow-right2"></span>'],
     responsive: {
         0: {
