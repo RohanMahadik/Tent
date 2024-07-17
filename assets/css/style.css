@@ -1047,4 +1047,7 @@ color: #1d2023;
     .ceo__thoughts .ceo__expression{
         width: 100%;
     }
+    .header__top ul{
+        gap: 5px;
+    }
 }
